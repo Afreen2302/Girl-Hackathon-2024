@@ -1,0 +1,19 @@
+Pseudocode to Measure Average Latency and Bandwidth:
+
+Initialize:
+    latency_sum = 0
+    total_transactions = 0
+    data_transferred = 0
+
+For each transaction in interface_trace:
+    If transaction is a Read (Rd) or Write (Wr):
+        Increment total_transactions by 1
+        If transaction is a Read:
+            Set start_time to current timestamp
+        Else (transaction is a Write):
+            Calculate latency as current timestamp - start_time
+            Add latency to latency_sum
+        Increment data_transferred by 32 bytes (assuming fixed data width)
+
+Calculate average_latency as latency_sum divided by total_transactions
+Calculate average_bandwidth as data_transferred divided by total_timestamp
