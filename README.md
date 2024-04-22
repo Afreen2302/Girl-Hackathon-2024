@@ -3,19 +3,6 @@
 
 This repository contains code for optimizing the Network-on-Chip (NOC) design using Reinforcement Learning.
 
-## Environment Setup:
-
-1. Make sure you have Python installed on your system.
-2. Install the required libraries:
-   ```
-   pip install -r requirements.txt
-   ```
-3. Clone the repository:
-   ```
-   git clone https://github.com/username/NOC-RL-Optimization.git
-   cd NOC-RL-Optimization
-   ```
-
 ## Running the Code:
 
 1. Navigate to the `src` directory:
