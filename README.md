@@ -59,3 +59,15 @@ average_bandwidth = bandwidth_count / total_timestamp
 This pseudocode efficiently calculates the average latency and bandwidth based on the provided interface trace.
 
 ---
+
+## RL Framework:
+
+For the second part, using Reinforcement Learning (RL) to optimize the NOC parameters, we can outline the RL framework as follows:
+
+States/Behaviors: The states could represent different configurations of the NOC, such as buffer sizes, arbiter weights, and throttling status. Behaviors refer to the actions taken by the system, like adjusting buffer sizes, changing arbiter weights, or enabling/disabling throttling.
+
+Actions: The actions represent the possible changes we can make to the NOC parameters. This could include increasing or decreasing buffer sizes, adjusting arbiter weights, or toggling throttling on/off.
+
+Rewards: The rewards indicate how well the current configuration performs in terms of meeting the optimization criteria. For example, a reward could be based on how close the measured latency is to the minimum latency requirement, how close the measured bandwidth is to 95% of the maximum bandwidth, how close the buffer occupancy is to 90%, and how rarely throttling occurs.
+
+RL Algorithm: Given the complexity of the problem and the continuous nature of the parameter space, a model-free RL algorithm like Deep Q-Networks (DQN) or Actor-Critic could be suitable. These algorithms can handle high-dimensional state and action spaces and learn to optimize the parameters over time.
