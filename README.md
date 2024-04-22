@@ -62,7 +62,7 @@ This pseudocode efficiently calculates the average latency and bandwidth based o
 
 ## RL Framework:
 
-For the second part, using Reinforcement Learning (RL) to optimize the NOC parameters, we can outline the RL framework as follows:
+Using Reinforcement Learning (RL) to optimize the NOC parameters, we can outline the RL framework as follows:
 
 States/Behaviors: The states could represent different configurations of the NOC, such as buffer sizes, arbiter weights, and throttling status. Behaviors refer to the actions taken by the system, like adjusting buffer sizes, changing arbiter weights, or enabling/disabling throttling.
 
